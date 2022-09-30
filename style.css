@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 11px;
+    font-family: 'montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Hero section */
+#hero {
+    height: 100vh;
+    background-image: url(./imgs/img-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 3rem;
+    position: relative;
+    color: rgb(3, 21, 104);
+}
+#hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease ;
+    transition-property: background-color, color;
+
+}
+#hero .cta:hover {
+    color: white;
+    background-color: crimson;
+}
+/* Services Section */
+
+#service {
+}
+#services .services {
+    flex-direction: column;
+    text-align: justify;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#services .section-title {
+    font-size: 3rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    text-align: center;
+}
+#services .service-top p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+#services .service-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    #flex-wrap: wrap;
+}
+#services .service-item {
+    flex-basis: 180%;
+    display: flex;
+    font-weight: 100;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url(./imgs/img-2.jpg);
+    background-size: cover;
+    margin: 20px 3%;
+    #margin-left: 200px;
+    #margin-right: 200px;
+    position: relative;
+    z-index: 1;
+    color: white;
+
+}
+#services .service-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .8;
+    z-index: -1;
+}
+#services .service-bottom .icon {
+    margin-bottom: 20px;
+}
+/* End Hero Section */
+
+/* End Hero section */
